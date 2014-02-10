@@ -2,21 +2,23 @@ Google Analytics Real Time Scraping
 ==============================================
 Currently logs in to Google Analytics and scrapes the realtime page for the active visitors number from the overview screen.
 
-Note: currently only support datadog as a backend, more to come soon
+Notes: 
+- Inspired by: <https://github.com/adamdunkley/casperjs-google-analytics-realtime-scrape>
+- Currently only support datadog as a backend, more to come soon
+- This project uses casperjs to scrape the metrics
 
 # Installation
 
 ## Using the official npm
-$ npm install -g gars
-
+`$ npm install -g gars`
 
 ## From this repo
+```
 $ git clone http://github.com/jedi4ever/gars.git
 $ npm install
+```
 
 # Configuration
-see `example-config.json`
-
 ```
     {
       "google": {
@@ -56,12 +58,10 @@ see `example-config.json`
 `$ ./node_modules/.bin/gars <config file>`
 
 # Finding the ids
-`google.analytics.home_id`
-`google.analytics.report_id`
+Once logged into the analytics. Note the following ids:
+
+- `google.analytics.home_id` : `https://www.google.com/analytics/web/?hl=en#home/<home_id>/`
+- `google.analytics.report_id` : `https://www.google.com/analytics/web/?hl=en#report/visitors-overview/<report_id>/`
 
 # Notes
 - http://stackoverflow.com/questions/19617113/hide-the-footprint-of-casperjs-with-google-analytics
-
-- Read files
-- Read environment
-- Read args
