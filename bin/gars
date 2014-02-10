@@ -1,3 +1,5 @@
 #!/bin/bash
-PATH=$PATH:./node_modules/.bin
-./node_modules/.bin/casperjs index.js $@
+mydir=`dirname $0`
+
+PATH=$PATH:$mydir/../node_modules/.bin
+$mydir/../node_modules/.bin/casperjs $mydir/../index.js $@
