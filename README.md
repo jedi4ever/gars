@@ -57,7 +57,7 @@ $ npm install
 `$ gars <config file>`
 
 ## From npm local
-`$ ./node_modules/.bin/gars <config file>`
+`$ ./node_modules/gars/bin/gars <config file>`
 
 # Finding the ids
 Once logged into the analytics. Note the following ids:
