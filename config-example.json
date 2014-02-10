@@ -1,0 +1,25 @@
+{
+  "google": {
+    "email": "<your email>",
+      "password": "<your password>",
+      "analytics": {
+        "home_id": "<your google analytics home id>",
+        "report_id": "<your google analytics project id>"
+      }
+  },
+  "casperjs": {
+    "verbose": true,
+    "logLevel": "info"
+  },
+  "metric": {
+    "name": "google.analytics.visitors",
+    "tags": [ "tag1", "tag2" ],
+    "hostname": "<your hostname>"
+  },
+  "backend": {
+      "datadog": {
+        "api_key": "<your datadog api key",
+        "url": "https://app.datadoghq.com/api/v1/series"
+      }
+    }
+}
