@@ -1,12 +1,11 @@
 {
   "name": "gars",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "scrapes google Realtime information and pushes it to your metrics system. (using Casperjs)",
   "main": "index.js",
   "dependencies": {
     "casperjs": "~1.1.0-beta3",
-    "phantomjs": "~1.9.7-1",
-    "spooky": "~0.2.4"
+    "phantomjs": "~1.9.7-1"
   },
   "devDependencies": {},
   "scripts": {
