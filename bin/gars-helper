@@ -1,0 +1,13 @@
+#!/bin/bash
+export PHANTOMCHECK_COMMAND=$0
+set -e
+cmd=`node -e '
+var d = process.env.PHANTOMCHECK_COMMAND;
+var fs = require("fs");
+var p = fs.realpathSync(d);
+console.log(p);
+'`
+
+mydir=`dirname $cmd`
+PATH=$PATH:$mydir/../node_modules/.bin:
+$mydir/../node_modules/.bin/casperjs $mydir/../index.js $@

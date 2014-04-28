@@ -1,21 +1,22 @@
 {
   "name": "gars",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "scrapes google Realtime information and pushes it to your metrics system. (using Casperjs)",
   "main": "index.js",
   "dependencies": {
     "casperjs": "~1.1.0-beta3",
-    "phantomjs": "~1.9.7-1"
+    "phantomjs": "~1.9.7-1",
+    "pty.js": "^0.2.4"
   },
   "devDependencies": {},
   "bin": {
     "gars": "./bin/gars"
   },
-   "keywords": [
-   "google",
-   "analytics",
-   "realtime"
- ],
+  "keywords": [
+    "google",
+    "analytics",
+    "realtime"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/jedi4ever/gars.git"
